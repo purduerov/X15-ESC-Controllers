@@ -3510,6 +3510,10 @@ Alternate pin configuration
 <part name="J4" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_NO_POP"/>
 <part name="U$7" library="X15-ESC-Controller-Parts-Library" deviceset="DISCRETECOMPONENTS_SWITCH" device="" package3d_urn="urn:adsk.eagle:package:24384574/2"/>
 <part name="D1" library="X15-ESC-Controller-Parts-Library" deviceset="LED-0805" device="" value="COLOR"/>
+<part name="3V3" library="X15-ESC-Controller-Parts-Library" deviceset="LED-0805" device="" value="COLOR"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="150"/>
+<part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3693,6 +3697,20 @@ Alternate pin configuration
 <attribute name="NAME" x="18.669" y="131.572" size="1.778" layer="95" font="vector" rot="R270"/>
 <attribute name="VALUE" x="13.335" y="131.572" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
 </instance>
+<instance part="3V3" gate="G$1" x="-76.2" y="48.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="-72.771" y="52.832" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="-78.105" y="52.832" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
+</instance>
+<instance part="R2" gate="G$1" x="-76.2" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="-77.724" y="38.1" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="-74.676" y="38.1" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="+3V3" gate="G$1" x="-76.2" y="30.48" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-73.66" y="35.56" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SUPPLY16" gate="GND" x="-76.2" y="55.88" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-74.295" y="59.055" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3775,6 +3793,10 @@ Alternate pin configuration
 <wire x1="-30.48" y1="99.06" x2="-48.26" y2="99.06" width="0.1524" layer="91"/>
 <junction x="-30.48" y="99.06"/>
 <junction x="-48.26" y="99.06"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -3878,6 +3900,10 @@ Alternate pin configuration
 <segment>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
 <pinref part="D1" gate="G$1" pin="C"/>
+</segment>
+<segment>
+<pinref part="3V3" gate="G$1" pin="C"/>
+<pinref part="SUPPLY16" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -4372,6 +4398,13 @@ Alternate pin configuration
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="124.46" x2="15.24" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="3V3" gate="G$1" pin="A"/>
+<wire x1="-76.2" y1="43.18" x2="-76.2" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
