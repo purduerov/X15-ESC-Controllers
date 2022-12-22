@@ -1727,7 +1727,53 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="2.667" y1="6.858" x2="-2.667" y2="6.858" width="0.127" layer="39"/>
 <wire x1="-2.667" y1="6.858" x2="-2.667" y2="-6.985" width="0.127" layer="39"/>
 </package>
+<package name="DISCRETECOMPONENTS_SW_2512" urn="urn:adsk.eagle:footprint:24384572/1">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="51"/>
+<wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="51"/>
+<wire x1="-4.354" y1="1.983" x2="4.354" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="4.354" y1="1.983" x2="4.354" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="4.354" y1="-1.983" x2="-4.354" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="-4.354" y1="-1.983" x2="-4.354" y2="1.983" width="0.0508" layer="39"/>
+<rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
+<rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
+<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
+<smd name="1" x="-3" y="0" dx="2.5" dy="1.6" layer="1"/>
+<smd name="2" x="3" y="0" dx="2.5" dy="1.6" layer="1"/>
+<text x="0" y="1.905" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.905" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="21"/>
+<wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="21"/>
+</package>
+<package name="0805" urn="urn:adsk.eagle:footprint:37400/1" locally_modified="yes">
+<description>&lt;p&gt;&lt;b&gt;Generic 2012 (0805) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<smd name="C" x="-1.05" y="0" dx="1.2" dy="1.2" layer="1"/>
+<smd name="A" x="1.1" y="0" dx="1.2" dy="1.2" layer="1"/>
+<text x="0" y="0.889" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.889" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-1.8" y1="0.8" x2="1.9" y2="0.8" width="0.0508" layer="39"/>
+<wire x1="1.9" y1="0.8" x2="1.9" y2="-0.8" width="0.0508" layer="39"/>
+<wire x1="1.9" y1="-0.8" x2="-1.8" y2="-0.8" width="0.0508" layer="39"/>
+<wire x1="-1.8" y1="-0.8" x2="-1.8" y2="0.8" width="0.0508" layer="39"/>
+<wire x1="-0.4572" y1="0" x2="-0.2032" y2="0" width="0.0508" layer="21"/>
+<wire x1="-0.2032" y1="0" x2="-0.2032" y2="0.3048" width="0.0508" layer="21"/>
+<wire x1="-0.2032" y1="0" x2="-0.2032" y2="-0.3048" width="0.0508" layer="21"/>
+<wire x1="-0.2032" y1="0" x2="0.1524" y2="0.3048" width="0.0508" layer="21"/>
+<wire x1="0.1524" y1="0.3048" x2="0.1524" y2="0" width="0.0508" layer="21"/>
+<wire x1="0.1524" y1="0" x2="0.1524" y2="-0.3048" width="0.0508" layer="21"/>
+<wire x1="0.1524" y1="-0.3048" x2="-0.2032" y2="0" width="0.0508" layer="21"/>
+<wire x1="0.1524" y1="0" x2="0.4572" y2="0" width="0.0508" layer="21"/>
+</package>
 </packages>
+<packages3d>
+<package3d name="DISCRETECOMPONENTS_SW_2512" urn="urn:adsk.eagle:package:24384574/2" type="box">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="DISCRETECOMPONENTS_SW_2512"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="STM32F042K6T6">
 <pin name="NRST" x="-22.86" y="2.54" length="middle"/>
@@ -1848,6 +1894,36 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="7.62" y1="-10.16" x2="7.62" y2="7.62" width="0.1524" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.1524" layer="94"/>
 <text x="-7.62" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="DISCRETECOMPONENTS_SWITCH">
+<wire x1="-2.54" y1="0" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<pin name="P$1" x="-7.62" y="0" visible="pad" length="middle" swaplevel="1"/>
+<pin name="P$2" x="7.62" y="0" visible="pad" length="middle" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="LED">
+<description>&lt;h3&gt;LED&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
+<text x="-3.429" y="-4.572" size="1.778" layer="95" font="vector" rot="R90">&gt;NAME</text>
+<text x="1.905" y="-4.572" size="1.778" layer="96" font="vector" rot="R90" align="top-left">&gt;VALUE</text>
+<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.429" y="-2.159"/>
+<vertex x="-3.048" y="-1.27"/>
+<vertex x="-2.54" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="-3.302"/>
+<vertex x="-2.921" y="-2.413"/>
+<vertex x="-2.413" y="-2.921"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -2008,6 +2084,44 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DISCRETECOMPONENTS_SWITCH" uservalue="yes">
+<description>TE Connectivity FSM2JMTR Switch</description>
+<gates>
+<gate name="G$1" symbol="DISCRETECOMPONENTS_SWITCH" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="DISCRETECOMPONENTS_SW_2512">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24384574/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED-0805" prefix="D">
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="0805">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="COLOR" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3334,138 +3448,6 @@ Alternate pin configuration
 </deviceset>
 </devicesets>
 </library>
-<library name="OTHER, Push button - FSM2JMTR">
-<description>Generated from &lt;b&gt;CAN-Test-Board.sch&lt;/b&gt;&lt;p&gt;
-by exp-lbrs.ulp</description>
-<packages>
-<package name="DISCRETECOMPONENTS_SW_2512" urn="urn:adsk.eagle:footprint:24384572/1">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="51"/>
-<wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="51"/>
-<wire x1="-4.354" y1="1.983" x2="4.354" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="4.354" y1="1.983" x2="4.354" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="4.354" y1="-1.983" x2="-4.354" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-4.354" y1="-1.983" x2="-4.354" y2="1.983" width="0.0508" layer="39"/>
-<rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
-<rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
-<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
-<smd name="1" x="-3" y="0" dx="2.5" dy="1.6" layer="1"/>
-<smd name="2" x="3" y="0" dx="2.5" dy="1.6" layer="1"/>
-<text x="0" y="1.905" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.905" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-<wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="21"/>
-<wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="21"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="DISCRETECOMPONENTS_SW_2512" urn="urn:adsk.eagle:package:24384574/2" type="box">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<packageinstances>
-<packageinstance name="DISCRETECOMPONENTS_SW_2512"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="DISCRETECOMPONENTS_SWITCH">
-<wire x1="-2.54" y1="0" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<pin name="P$1" x="-7.62" y="0" visible="pad" length="middle" swaplevel="1"/>
-<pin name="P$2" x="7.62" y="0" visible="pad" length="middle" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DISCRETECOMPONENTS_SWITCH" uservalue="yes">
-<description>TE Connectivity FSM2JMTR Switch</description>
-<gates>
-<gate name="G$1" symbol="DISCRETECOMPONENTS_SWITCH" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="DISCRETECOMPONENTS_SW_2512">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24384574/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="LED, 0805">
-<packages>
-<package name="0805" urn="urn:adsk.eagle:footprint:37400/1" locally_modified="yes">
-<description>&lt;p&gt;&lt;b&gt;Generic 2012 (0805) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<smd name="C" x="-1.05" y="0" dx="1.2" dy="1.2" layer="1"/>
-<smd name="A" x="1.1" y="0" dx="1.2" dy="1.2" layer="1"/>
-<text x="0" y="0.889" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.889" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="-1.8" y1="0.8" x2="1.9" y2="0.8" width="0.0508" layer="39"/>
-<wire x1="1.9" y1="0.8" x2="1.9" y2="-0.8" width="0.0508" layer="39"/>
-<wire x1="1.9" y1="-0.8" x2="-1.8" y2="-0.8" width="0.0508" layer="39"/>
-<wire x1="-1.8" y1="-0.8" x2="-1.8" y2="0.8" width="0.0508" layer="39"/>
-<wire x1="-0.4572" y1="0" x2="-0.2032" y2="0" width="0.0508" layer="21"/>
-<wire x1="-0.2032" y1="0" x2="-0.2032" y2="0.3048" width="0.0508" layer="21"/>
-<wire x1="-0.2032" y1="0" x2="-0.2032" y2="-0.3048" width="0.0508" layer="21"/>
-<wire x1="-0.2032" y1="0" x2="0.1524" y2="0.3048" width="0.0508" layer="21"/>
-<wire x1="0.1524" y1="0.3048" x2="0.1524" y2="0" width="0.0508" layer="21"/>
-<wire x1="0.1524" y1="0" x2="0.1524" y2="-0.3048" width="0.0508" layer="21"/>
-<wire x1="0.1524" y1="-0.3048" x2="-0.2032" y2="0" width="0.0508" layer="21"/>
-<wire x1="0.1524" y1="0" x2="0.4572" y2="0" width="0.0508" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="LED">
-<description>&lt;h3&gt;LED&lt;/h3&gt;
-&lt;p&gt;&lt;/p&gt;</description>
-<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
-<text x="-3.429" y="-4.572" size="1.778" layer="95" font="vector" rot="R90">&gt;NAME</text>
-<text x="1.905" y="-4.572" size="1.778" layer="96" font="vector" rot="R90" align="top-left">&gt;VALUE</text>
-<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.429" y="-2.159"/>
-<vertex x="-3.048" y="-1.27"/>
-<vertex x="-2.54" y="-1.778"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.302" y="-3.302"/>
-<vertex x="-2.921" y="-2.413"/>
-<vertex x="-2.413" y="-2.921"/>
-</polygon>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LED-0805" prefix="D">
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="0805">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="VALUE" value="COLOR" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3526,8 +3508,8 @@ by exp-lbrs.ulp</description>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_NO_POP"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_NO_POP"/>
 <part name="J4" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_NO_POP"/>
-<part name="U$7" library="OTHER, Push button - FSM2JMTR" deviceset="DISCRETECOMPONENTS_SWITCH" device="" package3d_urn="urn:adsk.eagle:package:24384574/2"/>
-<part name="D1" library="LED, 0805" deviceset="LED-0805" device="" value="COLOR"/>
+<part name="U$7" library="X15-ESC-Controller-Parts-Library" deviceset="DISCRETECOMPONENTS_SWITCH" device="" package3d_urn="urn:adsk.eagle:package:24384574/2"/>
+<part name="D1" library="X15-ESC-Controller-Parts-Library" deviceset="LED-0805" device="" value="COLOR"/>
 </parts>
 <sheets>
 <sheet>
