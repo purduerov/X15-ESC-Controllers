@@ -1026,7 +1026,7 @@ maxErrors = 50
 <attribute name="VALUE" x="2.667" y="13.8176" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="3V3" library="X15-ESC-Controller-Parts-Library" package="0805" value="COLOR" x="48.8442" y="24.0538" smashed="yes">
-<attribute name="NAME" x="48.8442" y="24.9682" size="0.762" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="NAME" x="48.8442" y="24.9682" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="49.8856" y="23.3426" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="R2" library="SparkFun-Resistors" package="0603" value="150" x="49.022" y="26.797" smashed="yes">
@@ -1142,20 +1142,14 @@ maxErrors = 50
 <contactref element="U$7" pad="1"/>
 <contactref element="D1" pad="C"/>
 <via x="39.8272" y="27.5844" extent="1-16" drill="0.35"/>
-<wire x1="30.6832" y1="32.152" x2="30.6832" y2="29.2862" width="0.254" layer="16"/>
-<wire x1="31.5214" y1="28.448" x2="31.877" y2="28.448" width="0.254" layer="16"/>
-<wire x1="31.5214" y1="28.448" x2="30.6832" y2="29.2862" width="0.254" layer="16"/>
 <wire x1="26.4526" y1="21.7798" x2="27.2526" y2="21.7798" width="0.254" layer="1"/>
-<wire x1="26.4526" y1="25.7556" x2="26.4526" y2="21.7798" width="0.254" layer="1"/>
-<wire x1="26.4526" y1="25.7556" x2="29.6672" y2="25.7556" width="0.254" layer="1"/>
 <wire x1="41.5776" y1="32.3342" x2="41.0346" y2="32.3342" width="0.254" layer="16"/>
 <wire x1="40.552" y1="31.8516" x2="40.552" y2="28.3092" width="0.254" layer="16"/>
 <wire x1="41.0346" y1="32.3342" x2="40.552" y2="31.8516" width="0.254" layer="16"/>
 <wire x1="40.552" y1="28.3092" x2="39.8272" y2="27.5844" width="0.254" layer="16"/>
-<wire x1="31.877" y1="27.9654" x2="31.877" y2="28.448" width="0.254" layer="16"/>
-<wire x1="29.872421875" y1="25.960821875" x2="31.877" y2="27.9654" width="0.254" layer="16"/>
-<wire x1="29.6672" y1="25.7556" x2="29.872421875" y2="25.960821875" width="0.254" layer="1"/>
-<via x="29.872421875" y="25.960821875" extent="1-16" drill="0.35"/>
+<wire x1="26.4526" y1="21.7798" x2="26.4526" y2="26.94224375" width="0.254" layer="1"/>
+<wire x1="26.4526" y1="26.94224375" x2="26.443421875" y2="26.951421875" width="0.254" layer="1"/>
+<via x="26.443421875" y="26.951421875" extent="1-16" drill="0.35"/>
 <polygon width="0.1524" layer="1" isolate="0.2032">
 <vertex x="-0.8128" y="35.2044"/>
 <vertex x="52.5272" y="35.2044"/>
