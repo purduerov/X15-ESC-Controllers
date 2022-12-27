@@ -1683,23 +1683,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="1" x="-2.44" y="0" drill="0.63" diameter="1.03"/>
 <pad name="2" x="2.44" y="0" drill="0.63" diameter="1.03"/>
 </package>
-<package name="JST_8_PIN">
-<smd name="8" x="0" y="0" dx="1.27" dy="0.635" layer="1"/>
-<smd name="7" x="0" y="-1.27" dx="1.27" dy="0.635" layer="1"/>
-<smd name="6" x="0" y="-2.54" dx="1.27" dy="0.635" layer="1"/>
-<smd name="5" x="0" y="-3.81" dx="1.27" dy="0.635" layer="1"/>
-<smd name="4" x="0" y="-5.08" dx="1.27" dy="0.635" layer="1"/>
-<smd name="3" x="0" y="-6.35" dx="1.27" dy="0.635" layer="1"/>
-<smd name="2" x="0" y="-7.62" dx="1.27" dy="0.635" layer="1"/>
-<smd name="1" x="0" y="-8.89" dx="1.27" dy="0.635" layer="1"/>
-<wire x1="-0.7" y1="0.5" x2="-0.7" y2="-9.8" width="0.1524" layer="21"/>
-<wire x1="-0.7" y1="-9.8" x2="-5" y2="-9.8" width="0.1524" layer="21"/>
-<wire x1="-5" y1="-9.8" x2="-5" y2="0.5" width="0.1524" layer="21"/>
-<wire x1="-5" y1="0.5" x2="-0.7" y2="0.5" width="0.1524" layer="21"/>
-<text x="-5.08" y="-11.43" size="1.016" layer="21">&gt;NAME</text>
-<text x="-5.08" y="0" size="1.016" layer="21">&gt;VALUE
-</text>
-<circle x="-1.8" y="-8.9" radius="0.5" width="0.1524" layer="21"/>
+<package name="8PIN_CONNECTOR" urn="urn:adsk.eagle:footprint:25902941/2" locally_modified="yes">
+<wire x1="0" y1="0" x2="10" y2="0" width="0.1524" layer="21"/>
+<wire x1="10" y1="0" x2="10" y2="4.25" width="0.1524" layer="21"/>
+<wire x1="10" y1="4.25" x2="0" y2="4.25" width="0.1524" layer="21"/>
+<wire x1="0" y1="4.25" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="-0.254" y1="-0.254" x2="-0.254" y2="4.445" width="0.127" layer="39"/>
+<wire x1="-0.254" y1="4.445" x2="10.16" y2="4.445" width="0.127" layer="39"/>
+<wire x1="10.16" y1="4.445" x2="10.16" y2="-0.254" width="0.127" layer="39"/>
+<wire x1="10.16" y1="-0.254" x2="9.017" y2="-0.254" width="0.127" layer="39"/>
+<wire x1="9.017" y1="-0.254" x2="9.017" y2="-1.651" width="0.127" layer="39"/>
+<wire x1="9.017" y1="-1.651" x2="1.016" y2="-1.651" width="0.127" layer="39"/>
+<wire x1="1.016" y1="-1.651" x2="1.016" y2="-0.254" width="0.127" layer="39"/>
+<wire x1="1.016" y1="-0.254" x2="-0.254" y2="-0.254" width="0.127" layer="39"/>
+<smd name="1" x="1.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="2" x="2.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="3" x="3.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="4" x="4.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="5" x="5.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="6" x="6.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="7" x="7.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="8" x="8.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
+<text x="1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<smd name="MECH1" x="0.2" y="3.81" dx="1.2" dy="1.8" layer="1"/>
+<smd name="MECH2" x="9.8" y="3.81" dx="1.2" dy="1.8" layer="1"/>
 </package>
 <package name="BACKPLANE_CONNECTORS_BKP">
 <wire x1="-2.449" y1="-6.729" x2="2.449" y2="-6.729" width="0.2" layer="21"/>
@@ -2045,16 +2052,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <gate name="G$1" symbol="JST_8_PIN" x="66.04" y="-12.7"/>
 </gates>
 <devices>
-<device name="" package="JST_8_PIN">
+<device name="" package="8PIN_CONNECTOR">
 <connects>
-<connect gate="G$1" pin="ADC" pad="3"/>
+<connect gate="G$1" pin="ADC" pad="1"/>
 <connect gate="G$1" pin="LIPO_GND" pad="2"/>
-<connect gate="G$1" pin="LIPO_IN" pad="1"/>
-<connect gate="G$1" pin="MTR_1" pad="5"/>
-<connect gate="G$1" pin="MTR_2" pad="6"/>
-<connect gate="G$1" pin="MTR_3" pad="7"/>
-<connect gate="G$1" pin="MTR_4" pad="8"/>
-<connect gate="G$1" pin="TLM" pad="4"/>
+<connect gate="G$1" pin="LIPO_IN" pad="3"/>
+<connect gate="G$1" pin="MTR_1" pad="4"/>
+<connect gate="G$1" pin="MTR_2" pad="5"/>
+<connect gate="G$1" pin="MTR_3" pad="6"/>
+<connect gate="G$1" pin="MTR_4" pad="7"/>
+<connect gate="G$1" pin="TLM" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3491,7 +3498,7 @@ Alternate pin configuration
 <part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="IC1" library="SparkFun-IC-Amplifiers" deviceset="OPAMP-DUAL" device="U" value="OP-AMP"/>
-<part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39277/1"/>
+<part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39277/1" value="JUMPER-SMT"/>
 <part name="R4" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
 <part name="R5" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="3.3k"/>
 <part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -4413,10 +4420,6 @@ Alternate pin configuration
 </schematic>
 </drawing>
 <compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
