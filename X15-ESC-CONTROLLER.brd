@@ -1277,9 +1277,9 @@ maxErrors = 50
 <signal name="CAN_L">
 <contactref element="U$2" pad="CANL"/>
 <contactref element="U$5" pad="7"/>
-<wire x1="43.5776" y1="30.3342" x2="43.5776" y2="29.9554" width="0.254" layer="1"/>
-<wire x1="43.9718" y1="29.5612" x2="43.9718" y2="27.3304" width="0.254" layer="1"/>
-<wire x1="43.5776" y1="29.9554" x2="43.9718" y2="29.5612" width="0.254" layer="1"/>
+<wire x1="43.5776" y1="30.3342" x2="43.5776" y2="28.8124" width="0.254" layer="1"/>
+<wire x1="43.9718" y1="28.4182" x2="43.9718" y2="27.3304" width="0.254" layer="1"/>
+<wire x1="43.5776" y1="28.8124" x2="43.9718" y2="28.4182" width="0.254" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="U$2" pad="FAULT"/>
