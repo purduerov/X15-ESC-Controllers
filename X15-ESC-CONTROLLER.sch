@@ -4054,24 +4054,6 @@ by exp-lbrs.ulp</description>
 <label x="88.9" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TLM" class="0">
-<segment>
-<wire x1="129.54" y1="12.7" x2="134.62" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="12.7" x2="134.62" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="-2.54" x2="124.46" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G2" pin="OUT"/>
-</segment>
-</net>
-<net name="TLM_ESC" class="0">
-<segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="-2.54" x2="106.68" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="-2.54" x2="106.68" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="10.16" x2="114.3" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G2" pin="+IN"/>
-</segment>
-</net>
 <net name="TIM1_CH1" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="MTR_1"/>
@@ -4355,6 +4337,24 @@ by exp-lbrs.ulp</description>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="-55.88" y1="45.72" x2="-55.88" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="IC1" gate="G2" pin="+IN"/>
+<wire x1="114.3" y1="10.16" x2="109.22" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="10.16" x2="109.22" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="-2.54" x2="114.3" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="-2.54" x2="134.62" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-2.54" x2="134.62" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G2" pin="OUT"/>
+<wire x1="134.62" y1="12.7" x2="129.54" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
