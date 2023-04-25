@@ -6499,6 +6499,7 @@ part number 2062-2P from STA</description>
 <wire x1="-78.74" y1="-5.08" x2="-10.16" y2="-5.08" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-10.16" y1="-5.08" x2="-10.16" y2="33.02" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-10.16" y1="33.02" x2="-78.74" y2="33.02" width="0.1524" layer="97" style="longdash"/>
+<text x="-50.8" y="-2.54" size="1.778" layer="97">X15 uses MAX3058, not TCAN377D</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="-25.4" y="91.44" smashed="yes">
